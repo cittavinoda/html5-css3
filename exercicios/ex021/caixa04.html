@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modêlo de Caixas 4</title>
+    <style>
+        .definicao{
+            width: 500px;
+            height: 40px;
+            text-align: justify;
+            border: 5px dashed blue;
+            background-color: greenyellow;
+            margin-bottom: 30px;
+            padding: 10px;
+        }
+        h1{
+            background-color: lightgrey;
+            height: 80px;
+            width: 300px;
+            border-width: 10px;
+            border-style: solid;
+            border-color: darkslategray;
+            padding: 10px;
+            margin: 10px 10px 40px 20px;
+            outline: 5px dashed rgb(3, 216, 209);
+        }
+        a{
+            display: block;
+            border: 3px dashed red;
+            padding: 10px;
+        }
+    </style>
+</head>
+<body>
+    <p class="definicao">Transformando a caixa inline-box, posta na âncora, em caixa box-level pelo método display: block</p>
+    <h1>Exemplo de Caixa Box-level</h1>
+    <p>Parágrafos também são exemplos de caixa box-level, mas os <a href="#"> links são exemplos de caixas do tipo ilnline-level </a>. Vamos ver como tudo isso funciona?</p>
+</body>
+</html>

@@ -1,0 +1,33 @@
+@charset "UTF-8";
+
+/*
+    em HTML uma id é identificado pelo símbolo de cerquilha (#)
+    em HTML uma class é identificada por um ponto (.)
+*/
+body{
+    background-color: rgb(128, 154, 128);
+    font-family: Arial, Helvetica, sans-serif;
+}
+h1{
+    color: rgb(0, 90, 0);
+}
+h1#principal{
+    text-align: center;
+    background-color: rgb(124, 187, 124);
+    color: white;
+}
+h2{
+    color: rgb(2, 142, 2);
+}
+.basico{
+    color: yellow;
+}
+.intermediario{
+    color: red;
+}
+.avançado{
+    color: blue;
+}
+.destaque{
+    background-color: rgba(173, 173, 86, 0.51);
+}

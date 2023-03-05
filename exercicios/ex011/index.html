@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mídias em HTML5</title>
+</head>
+<body>
+    <h1>Imagem Dinâmica</h1>
+    <p>Tente abrir este site em vários dispositivos diferentes ou simplesmente aumente e diminua o tamanho do seu navegador.</p>
+
+    <picture>
+        <source media="(max-width: 750px)" srcset="imagens/foto-p.png" type="image/png">
+        <source media="(max-width: 1050px )" srcset="imagens/foto-m.png" type="image/png">
+        <img src="imagens/foto-g.png" alt="Imagem flexível">
+    </picture>
+
+    <h1>Reproduzindo Audio</h1>
+    <p>Vamos aprender a reproduzir áudio em HTML5.</p>
+    <audio src="midias/ACHYUTAM KESHAVAM KRISHNA DAMODARAM  VERY BEAUTIFUL SONGS - POPULAR KRISHNA BHAJANS ( FULL SONGS ).mp3" controls></audio>
+    <audio src="midias/Audio Mantra a Prabhupada 2023-01-30.mpeg" controls></audio>
+        
+    <audio preload="metadata" controls>
+        <source src="midias/GOVIND BOLO HARI GOPAL BOLO   VERY BEAUTIFUL SONGS - POPULAR KRISHNA BHAJANS ( FULL SONGS ).mp3" type="audio/mpeg">
+        <source src="midias/GOVINDAM ADI PURSHAM.ogg" type="audio/ogg">
+    </audio>
+    <p>Neste caso temos duas mídias de áudio. O comando source dá prioridade em reproduzir o primeiro audio da lista que for compatível com o navegador. Temos aqui o primeiro áudio em mp3 e o segundo áudio em ogg. O source irá buscar a reprodução do áudio em mp3. Caso ele não encontre o source vai tentar reproduzir o áudio em ogg. Se o sourdce encontrar os dois áudios, ele irá tocar o primeiro da lista.</p>
+</body>
+</html>

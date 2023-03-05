@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Listas</title>
+    <link rel="stylesheet" href="listas.css">
+</head>
+<body>
+    <h1>Trabalhando com Listas</h1>
+    <h2>Listas Ordenadas (ol)</h2>
+    <ol>
+        <li>Acordar</li>
+        <li>Assim que acordar, ligar para o João.</li>
+        <li>tomar Café</li>
+        <li>Escovar os dentes</li>
+    </ol>
+    <p>ol significa Ordered List (Listas Ordenadas)</p>
+    <p>il, significa list iten (item de lista)</p>
+
+    <p>O programa para criar lista nos dá 3 opções de marcadores:</p>
+    <ol>
+        <li>Marcadores Numéricos: 1, 2, 3, 4, 5, ...</li>
+        <li>Marcadores Alfabéticos: A, a, B, b, C, c, D, d, ...</li>
+        <li>Marcadores Romanos: I, i, II, ii, III, iii, IV, iv, ...</li>
+    </ol>
+    <p>Para utilizar estes marcadores digita-se dentro da tag de abertura ol a css type e dê enter, aparecendo a área para digitar a sua opção.</p>
+    <p>Exemplo</p>
+    <div class="um">
+        <ol type="1">
+            <li>Acordar</li>
+            <li>Assim que acordar, ligar para o João.</li>
+            <li>tomar Café</li>
+            <li>Escovar os dentes</li>
+        </ol>
+        <ol type="A">
+            <li>Acordar</li>
+            <li>Assim que acordar, ligar para o João.</li>
+            <li>tomar Café</li>
+            <li>Escovar os dentes</li>
+        </ol>
+        <ol type="a">
+            <li>Acordar</li>
+            <li>Assim que acordar, ligar para o João.</li>
+            <li>tomar Café</li>
+            <li>Escovar os dentes</li>
+        </ol>
+        <ol type="I">
+            <li>Acordar</li>
+            <li>Assim que acordar, ligar para o João.</li>
+            <li>tomar Café</li>
+            <li>Escovar os dentes</li>
+        </ol>
+        <ol type="i">
+            <li>Acordar</li>
+            <li>Assim que acordar, ligar para o João.</li>
+            <li>tomar Café</li>
+            <li>Escovar os dentes</li>
+        </ol>
+    </div>
+    <p>O termo type indica o tipo de marcador que se deseja usar na organização de uma lista. Todos estes tipos irão começar do primeiro caracter do tipo numérico, partindo do número 1, tipo alfabético, partindo sempre da letra A, a; e do tipo românico partindo sempre do I, i.</p>
+    <p>Caso se deseje que uma lista inicía-se de um outro ponto de partida e não dos caracteres iniciais, deve-se acrescentar ao type a tag start que significa de que ponto você quer que comece a organizar sua lista. Na tag start não se usa caractere alfabético e nem romano, usa-se somente caractere numérico. O número a ser usado deve ser referente a posição que o caractere ocupa em sua estrutura. Exemplo a letra e ocupa a posição 5 dentro do alfabeto. A letra j ocupa a décima posição dentro do alfabeto. Então se for iniciar uma lista a partir da letra jota, o código deve ser escrito da seguinte maneira:</p>
+        
+    <p>ol type="A" start= "10". o start 10 define que a lista começará da letra j. Vamos ver alguns exemplos?</p>
+    
+    
+    <div class="dois">
+        <ol type="A" start="10">
+            <li>Acordar</li>
+            <li>Assim que acordar, ligar para o João.</li>
+            <li>Tomar café</li>
+            <li>Escovar os dentes</li>
+        </ol>
+        
+        <ol type="1" start="3">
+            <li>Acordar</li>
+            <li>Assim que acordar, ligar para o João.</li>
+            <li>Tomar café</li>
+            <li>Escovar os dentes</li>
+        </ol>
+        <ol type="A" start="3">
+            <li>Acordar</li>
+            <li>Assim que acordar, ligar para o João.</li>
+            <li>Tomar café</li>
+            <li>Escovar os dentes</li>
+        </ol>
+        <ol type="a" start="4">
+            <li>Acordar</li>
+            <li>Assim que acordar, ligar para o João.</li>
+            <li>Tomar café</li>
+            <li>Escovar os dentes</li>
+        </ol>
+        <ol type="I" start="5">
+            <li>Acordar</li>
+            <li>Assim que acordar, ligar para o João.</li>
+            <li>Tomar café</li>
+            <li>Escovar os dentes</li>
+        </ol>
+        <ol type="i" start="2">
+            <li>Acordar</li>
+            <li>Assim que acordar, ligar para o João.</li>
+            <li>Tomar café</li>
+            <li>Escovar os dentes</li>
+        </ol>
+    </div>
+
+    <h2>Listas Não Ordenadas (ul)</h2>
+
+    <p>ul significa unordered list, ou listas não ordenadas. Este tipo de lista segue o mesmo princípio das listas ordenadas, no entanto, seus marcadores são de três tipos apenas: quadrado (square), círculo aberto (circle), e um círculo aberto (disk).</p>
+    <div class="tres">
+        <ul>
+            <li>Pão</li>
+            <li>Leite</li>
+            <li>Tomate</li>
+            <li>Manteiga</li>
+            <li>Arroz</li>
+            <li>Feijão</li>
+        </ul>
+        <ul type="square">
+            <li>Pão</li>
+            <li>Leite</li>
+            <li>Tomate</li>
+            <li>Manteiga</li>
+            <li>Arroz</li>
+            <li>Feijão</li>
+        </ul>
+        <ul type="circle">
+            <li>Pão</li>
+            <li>Leite</li>
+            <li>Tomate</li>
+            <li>Manteiga</li>
+            <li>Arroz</li>
+            <li>Feijão</li>
+        </ul>
+    </div>
+    <h2>Minhas Linguagens Favoritas</h2>
+    <div class="quatro">
+        <ol>
+            <li>Antigas</li>
+            <ol type="a">
+                <li>Clipper</li>
+                <li>Visual Basic</li>
+                <li>Fortran</li>
+                <li>Delphi</li>
+            </ol>
+            <li>Novas</li>
+            <ol type="a" start="5">
+                <li>PHP</li>
+                <li>Python</li>
+                <li>JavaScript</li>
+                <li>Kodin</li>
+            </ol>
+        </ol>
+    </div>
+    <h2>Meus Jogos Favoritos</h2>
+    <h3>Juntando Listas Ordenadas e Não Ordenadas</h3>
+
+    <div class="cinco">
+        <ol>
+            <li>NES</li>
+            <ul type="square">
+                <li>Mario Bros</li>
+                <ul type="circle">
+                    <li>Mário Bros 3</li>
+                    <li>Mário: Lost Levels</li>
+                </ul>
+                <li>Ninja Gaiden</li>
+            </ul>
+            <li>SNES</li>
+            <ul type="square">
+                <li>Super Mário</li>
+                <li>Donkey Kong</li>
+            </ul>
+            <li>PlayStation</li>
+            <ul type="square">
+                <li>Final Fantasy</li>
+                <li>Castelvânia</li>
+            </ul>
+        </ol>
+    </div>
+    <h2>Lista de Definições (dl, dt, dd)</h2>
+    <p>A lista de definição (dl) funciona como a lista de um dicionário, onde você tem uma lista de titulo (dt) e abaixo de cada título você tem a lista de descrição (dd) informando o significado da palavra do título.</p>
+
+    <dl>
+        <dt>HTML</dt>
+        <dd>Linguagem de marcação para a criação de conteúdo de um site.</dd>
+        <dt>CSS</dt>
+        <dd>Linguagem de marcação para criação do design de um site.</dd>
+        <dt>JavaScript</dt>
+        <dd>Linguagem de programação para a criação da interatividade de um site.</dd>
+
+    </dl>
+
+</body>
+</html>

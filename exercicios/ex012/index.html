@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vídeos com HTML5</title>
+    <style>
+        p{
+            text-align: justify;
+        }
+    </style>
+</head>
+<body>
+    <hr>
+    <p>Neste site, vamos inserir um arquivo de vídeo. Este arquivo foi gravado em mp4. Através do programa 'HandBreak' este arquivo em mp4 será convertido para um arquivo webYouTube 720p30 o que deixará este arquivo bem mais leve para rodar em site.</p>
+    <hr>
+    <h1>Inserindo Vídeos Hospedados Localmente</h1>
+    <p>Este vídeo está hospedado no meu próprio servidor.</p>
+
+    <video width="560" poster="imagens/Mantras.png" controls loop>
+        <source src="midias/across-the-universe.mp4" type="video/mp4">
+        <source src="midias/across-the-universe.m4v" type="video/mp4">
+        <p>Seu navergador não tem compatibilidade de vídeos.</p>
+    </video>
+    <h1>Inserindo video do YouTube</h1>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/nzBd37bGr4w" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+
+    <h1>Inserindo Vídeo do Vimeo</h1>
+    <iframe src="https://player.vimeo.com/video/243593945?h=46ed25835b" width="640" height="360" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe>
+
+</body>
+</html>

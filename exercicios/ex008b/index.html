@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Outras Formatações</title>
+</head>
+<body>
+    <h1>Outras Formatações</h1>
+    <h2>Código-fonte</h2>
+    <h3>Comando code</h3>
+    <p>O comando document.getElementById('teste') é escrito em linguagem JavaScript. Esta fonte cada letra ocupa um espaço semelhante a largura de sua forma. Por exemplo, a letra l e t ocupa um espaço muito menor do que a letra d. Para corrigir este problemadeve-se envelopar o comando document.getelementById dentro da tag code.</p>
+    <p>O comando <code>document.getElementById('teste')</code> é escrito em linguagem JavaScript.</p>
+    <h3>Comando pre</h3>
+    <p>O comando "code" muito embora padroniza a largura das letras tornando o texto mais visível, para o caso de padronizar a larguras dos caracteres em um código, de python por exemplo, ele não organiza o texto editado na forma de código, sendo necessário o envelopamento do código com o code pela tag pre.</p>
+
+    <p>Observe a diferença nos códigos escritos abaixo:</p>
+    <p>Primeiro Código envelopado apenas com a tag code</p>
+    <code>
+        num = int(input('Digite um número'))
+        if num % 2 == 0:
+            print('O  número {num} é PAR')
+        else:
+            print('O número {num} é ÍMPAR')
+        print('Fim do programa')
+    </code>
+    <p>Observe que dessa forma o código será escrito na mesma linha.</p>
+    <P>Segundo Códigoenvelopado com a tad code e envelopado com a tag pre.</P>
+    <pre>
+        <code>
+            num = int(input('Digite um número'))
+            if num % 2 == 0:
+                print('O  número {num} é PAR')
+            else:
+                print('O número {num} é ÍMPAR')
+            print('Fim do programa')
+        </code>
+    </pre>
+    <h3>Avançando ou Recuando um Código Dentro do Bloco</h3>
+    <p>Pra você poder avançar um código dentro do bloco, selecione o código e zaperte a tecla tab. A cada aperto datecdla tab o código anda um pixel para a direita.</p>
+    <p>Para recuar um código dentro do bloco, selecione o código, aperte a tecla shift e tab, A cada aperto da tecla tab com o shift pressionado o código irá recuar um pixel para a esquerda.</p>
+    <h2>Citações Simples</h2>
+    <p>Como diria um pai de um amigo o computador é um burro muito rápido.</p>
+    <p>Para demonstrar que parte de um texto é uma citação deve-se envelopar a parte destinada a citação pela tag <strong>q</strong>, que significa citação. A tag <strong>q</strong> põe o texto envelopado entre <strong>aspas</strong>. Veja o texto abaixo:</p>
+    <p>Como diria um pai de um amigo <q>o computador é um burro muito rápido</q>.</p>
+    <h2>Citações Completas</h2>
+    <p>A citação completa remete a uma citação extraída de um livro de um determinado autor deve ser citado com a tag blockquote.</p>
+    
+    <h3>Primeiros passos no HTML5, JavaScript e CSS3</h3>
+   
+    <blockquote cite="www.devmedia.com.br/primeiros-passos-no-html5-javascript-e-css3/25647">
+        <p>HTML5, JavaScript e CSS3</p>
+        Este artigo apresentará alguns dos recursos trazidos pelas tecnologias HTML5, JavaScript e CSS3. Dentre os recursos abordados estão: campos de dados, validação de formulário, armazenamento de dados com JavaScript, efeitos de texto e bordas redondas com CSS3.
+    </blockquote>
+    <h2>Abreviações</h2>
+    <p>Estou estudano HTML e CSS5.Estou adorando.</p>
+    <p>Para mostrar o que significa uma sigla digitada em um texto, a sigla deve ser envelopada pela tag abbr. O comando abbr -abreviação- abre um espaço "title" para se digitar o significado da sigla. Então quando passar o mouse sobre a sigla no site, aparecerá sobrea sigla o seu significado. Veja o exemplo abaixo.</p>
+    <p>Estou estudano <abbr title="Linguagem de Marcação de Hipertexto">HTML</abbr> e <abbr title="Estilo de Folhas em Cascata">CSS</abbr>.Estou adorando.</p>
+    <h2>Texto Invertido</h2>
+    <p>O termo bdo solicita uma direção para o texto: rtl direciona o texto da direita para a esquerda e ltr direciona o texto da esquerda para a direita.</p>
+    <p><bdo dir="rtl">Estou aprendendo a criar coisas em HTML</bdo> | Este texto está invertido sendo escrito da direita para a esquerda.</p>
+    <p><bdo dir="ltr">Estou aprendendo a criar coisas em HTML</bdo> | Entretanto, este texto está normal sendo escrito da esquerda para a direita.</p>
+    
+</body>
+</html>
