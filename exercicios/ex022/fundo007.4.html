@@ -4,13 +4,13 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Alinhamento Manual</title>
+    <title>Alinhamento Centralizado</title>
     <style>
         #container{
             background-image: url('imagens/target001.png');
             background-size: 100% 100%;
             position: relative;
-            height: 500px;
+            height: 96vh;
             padding: 10px;
             background-color: purple;
         }
@@ -27,6 +27,7 @@
 
             left: 50%;
             top: 50%;
+            transform: translate(-50%, -50%);
         }
         
     </style>
@@ -34,7 +35,7 @@
 <body>
     <section id="container">
         <article id="conteudo">
-            <p>Para termos o alinhamento da caixa amarela em relação a caixa roxa, temos que fazer uso da propriedade "position". A caixa roxa, como é o elemento pai recebe a propriedade padrão "position: relative", e a caixa amarela como é o elemento filho receberá a propriedade "position: relative". Neste caso, iremos trabalhar com valores em porcentagem nas propriedades left e top para centralizar a caixa amarela no centro da caixa roxa. O que vai acontecer é que o vértice left-top da caixa amarela é quem vai se posicionar no centro da caixa roxa.</p> <p>Para melhor visualizar esta situação vamos inserir tanto na caixa roxa quanto na caixa amarela uma target, mostrando a divisão das caixas e o centro delas. O background-size 100% 100% fi aplicado para dimensionar a target dentro da dimensão das caixas roxa e amarela.</p>
+        <p>Para termos o alinhamento da caixa amarela em relação a caixa roxa, temos que fazer uso da propriedade "position". A caixa roxa, como é o elemento pai recebe a propriedade padrão "position: relative", e a caixa amarela como é o elemento filho receberá a propriedade "position: relative". Agora, vamos resolver o problema da centralização centro a centro, isto é, o centro da caixa amarela tem que coincidir com o centro da caisa roxa.</p> <p>Para resolver este problema iremos fazer uso da propriedade "transform" com a função "translate". Esta propriedade trabalha com porcentagem. Se o ponto left-top da caixa amarela está no centro da caixa roxa, então o posicionamento pela propriedade "transform: translate" deve receber o valor de -50%, -50%. Com estes valores, o ponto left-top da caixa amarela será puxada um novo ponto, sendo a 50% a esquerda do "eixo y" e a 50% acima do "eixo x" centralizando o centro da caixa amarela com o centro da caixa roxa. </p>
        </article>
     </section>
 </body>

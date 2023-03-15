@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Alinhamento Centralizado</title>
+    <title>Compreendendo o Posicionamento</title>
     <style>
         #container{
             background-image: url('imagens/target001.png');
@@ -24,7 +24,7 @@
             background-color: yellow;
             padding: 10px;
             text-align: justify;
-
+            
             left: 50%;
             top: 50%;
             transform: translate(-50%, -50%);
@@ -35,7 +35,9 @@
 <body>
     <section id="container">
         <article id="conteudo">
-        <p>Para termos o alinhamento da caixa amarela em relação a caixa roxa, temos que fazer uso da propriedade "position". A caixa roxa, como é o elemento pai recebe a propriedade padrão "position: relative", e a caixa amarela como é o elemento filho receberá a propriedade "position: relative". Agora, vamos resolver o problema da centralização centro a centro, isto é, o centro da caixa amarela tem que coincidir com o centro da caisa roxa.</p> <p>Para resolver este problema iremos fazer uso da propriedade "transform" com a função "translate". Esta propriedade trabalha com porcentagem. Se o ponto left-top da caixa amarela está no centro da caixa roxa, então o posicionamento pela propriedade "transform: translate" deve receber o valor de -50%, -50%. Com estes valores, o ponto left-top da caixa amarela será puxada um novo ponto, sendo a 50% a esquerda do "eixo y" e a 50% acima do "eixo x" centralizando o centro da caixa amarela com o centro da caixa roxa. </p>
+        <p>Como funciona o "transform: translate"? O primeiro parâmetro, ou valor, está no eixo x, e o segundo parâmetro, ou valor, está no eixo y. No eixo x, todo valor positivo desloca o ponto "left-top" da caixa amarela para a direita, e os valores negativos deslocam o ponto "left-top" para a esquerda. No eixo y, todo valor positivo desloca o ponto "left-top" da caixa amarela para baixo,e todo valor negativo, desloca o ponto "left-tpo" para cima.</p>
+        <p>A divisão de porcentagem das propriedades left e top, dizem respeito ao comprimento estabelecido na reta x e y que determinam a posição onde o ponto "left-top" irá ser posicionado.</p>
+        <p>Exemplo: 50%, 50%: O ponto "left-top" da caixa amarela se deslocará 50% a direita do eixo y no comprimento do eixo x e 50% abaixo do eixo x no comprimento do eixo y. -50%, -50%: O ponto "left-top" da caixa amarela se deslocará 50% a esquerda do eixo y no comprimento do eixo x e 50% acima do eixo x no comprimento do eixo y.</p>
        </article>
     </section>
 </body>

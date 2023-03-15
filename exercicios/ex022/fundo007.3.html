@@ -4,25 +4,30 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Alinhamento Manual</title>
+    <title>Alinhamento Automático Padrão</title>
     <style>
         #container{
+            background-image: url('imagens/target001.png');
+            background-size: 100% 100%;
             position: relative;
             height: 500px;
+            
             padding: 10px;
             background-color: purple;
         }
 
         #conteudo{
+            background-image: url('imagens/target001.png');
+            background-size: 100% 100%;
             position: absolute;
-            height: 200px;
+            height: 300px;
             width: 500px;
             background-color: yellow;
             padding: 10px;
             text-align: justify;
 
-            left: 200px;
-            top: 100px;
+            left: 50%;
+            top: 50%;
         }
         
     </style>
@@ -30,8 +35,7 @@
 <body>
     <section id="container">
         <article id="conteudo">
-            <p>Por padrão do html, o alinhamento da caixa amarela em relação ao centro da caixa roxa, se faz, partindo do ponto left-top da caixa amarela, isto é, é este vértice esquerdo superior da caixa amarela que vai ser alinhado ao centro da caixa roxa. Vamos ver? Para isto, precisaremos da propriedade position, sendo que a caixa roxa receberá a propriedade "position: relative", e a caixa amarela receberá a propriedade "position: absolute". Após a declaração da propriedade "position", você terá acesso a alterar manualmente as propriedades "left, top, right e bottom. Vejamos. Observe que a caixa amarela foi deslocada, dentro da caixa roxa em 200 pixel da margem esquerda e 100 pixel do topo.</p>
-            <img src="imagens/Alinhamento1.png">
+            <p>Para termos o alinhamento da caixa amarela em relação a caixa roxa, temos que fazer uso da propriedade "position". A caixa roxa, como é o elemento pai recebe a propriedade padrão "position: relative", e a caixa amarela como é o elemento filho receberá a propriedade "position: relative". Neste caso, iremos trabalhar com valores em porcentagem nas propriedades left e top para centralizar a caixa amarela no centro da caixa roxa. O que vai acontecer é que o vértice left-top da caixa amarela é quem vai se posicionar no centro da caixa roxa.</p> <p>Para melhor visualizar esta situação vamos inserir tanto na caixa roxa quanto na caixa amarela uma target, mostrando a divisão das caixas e o centro delas. O background-size 100% 100% fi aplicado para dimensionar a target dentro da dimensão das caixas roxa e amarela.</p>
        </article>
     </section>
 </body>

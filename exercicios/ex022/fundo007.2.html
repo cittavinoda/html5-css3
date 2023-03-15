@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alinhamento Manual</title>
+    <style>
+        #container{
+            position: relative;
+            height: 500px;
+            padding: 10px;
+            background-color: purple;
+        }
+
+        #conteudo{
+            position: absolute;
+            height: 200px;
+            width: 550px;
+            background-color: yellow;
+            padding: 10px;
+            text-align: justify;
+
+            left: 200px;
+            top: 100px;
+        }
+        
+    </style>
+</head>
+<body>
+    <section id="container">
+        <article id="conteudo">
+            <p>Por padrão do html, o alinhamento da caixa amarela em relação a caixa roxa, se faz, partindo do ponto left-top da caixa amarela, isto é, é este vértice esquerdo superior da caixa amarela que vai ser alinhado a um ponto qualquer pré definido dentro da caixa roxa. Para isto, precisaremos da propriedade position, sendo que a caixa roxa receberá a propriedade "position: relative", e a caixa amarela receberá a propriedade "position: absolute".A prtopriedade "position: relative" é uma propriedade padrão da html. A declaração da propriedade "position: absolute", permite a alteração manual das propriedades "left, top, right e bottom. Observe que a caixa amarela foi deslocada, dentro da caixa roxa em 200 pixel da margem esquerda e 100 pixel do topo conforme foi manualmente estabelecido.</p>
+            <img src="imagens/Alinhamento.png">
+       </article>
+    </section>
+</body>
+</html>
