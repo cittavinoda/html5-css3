@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Estudo de Iframe 1.4</title>
+    <style>
+        iframe.borda{
+            border: 3px solid green;
+        }
+    </style>
+</head>
+<body>
+    <h1>Testando o Uso de um Iframe</h1>
+
+    <p>Acessando o site do Curso em Vídeo para aprender a programar.</p>
+
+    <h2>Inserindo Borda no Iframe</h2>
+
+    <p>
+        A inserção de borda no "Iframe" pode ser feita de duas maneiras: pelo frameborder="", ou pela CSS.
+    </p>
+
+    <p>
+        Pela frameborder o valor zero (frameborder="0") determina que o iframe não terá borda, e se o valor for qualquer número diferente de zero o iframe terá uma borda padrão de 1px solid black. Inserindo a borda na CSS a configuração da borda fica a cargo do desenvolvedor.
+    </p>
+
+    <h2>Iframe sem Borda</h2>
+
+    <p>
+        Acessando o site do 
+        <iframe src="https://cursoemvideo.com" frameborder="0"></iframe><a href="https://cursoemvideo.com" target="_blank">Curso em Vídeo</a> para aprender a programar.
+    </p>
+
+    <h2>Iframe com Borda</h2>
+
+    <p>
+        Acessando o site do 
+        <iframe src="https://cursoemvideo.com" frameborder="1"></iframe><a href="https://cursoemvideo.com" target="_blank">Curso em Vídeo</a> para aprender a programar.
+    </p>
+
+    <h2>Iframe com Borda inserida pela CSS</h2>
+
+    <p>
+        Acessando o site do 
+        <iframe class="borda" src="https://cursoemvideo.com" frameborder="0"></iframe><a href="https://cursoemvideo.com" target="_blank">Curso em Vídeo</a> para aprender a programar.
+    </p>
+</body>
+</html>
