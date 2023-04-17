@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Iframe 4.4</title>
+    <style>
+        main{
+            background-color: bisque;
+            width: 500px;
+        }
+        h1, h3{
+            padding: 10px 10px 0px 10px;
+        }
+        p{
+            padding: 10px;
+            text-align: justify;
+        }
+        iframe{
+            display: block;
+            margin: auto;
+            background-color: aqua;
+        }
+    </style>
+</head>
+<body>
+    <main>
+        <h1>Meu Site Principal</h1>
+        <h3>Dando permissão para o acesso de um arquivo específico. </h3>
+        <p>
+            Veremos aqui a possibilidade de dar ao usuário do seu site permissão para um acesso específico, como por exemplo, dar acesso aos arquivos que estão dentro da mesma pasta onde o seu site foi criado. 
+        </p>
+        
+        <iframe src="paginas-extras/pag004.html" sandbox="allow-same-origin" referrerpolicy="no-referrer">
+            Seu navegador não é compatível com iframes.
+        </iframe>
+        
+        <p>
+            Obs: A configuração sandbox="allow-same-origin" permite que o usuário do site dentro do seu iframe, tenha acesso a qualquer documentação que esteja dentro da própria pasta de construção do site desde que ela esteja declarada no src do iframe. Por exemplo, este site está dentro da pasta "ex024". Dentro desta pasta temos a pasta "páginas-extras", e dentro desta temos a página "pag004.html" que está declarada no src do iframe. Desta forma pela configuração sandbox e referrerpolicy, todas as seguranças do iframe está ativado, e liberado apenas o acesso a página para prenchimento e envio de formulários.
+        </p>
+    </main>
+</body>
+</html>

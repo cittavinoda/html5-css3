@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Script 1</title>
+    <style>
+        main{
+            background-color: bisque;
+            width: 500px;
+        }
+        h1{
+            padding: 10px 10px 0px 10px;
+        }
+        p{
+            padding: 10px;
+            text-align: justify;
+        }
+        iframe{
+            display: block;
+            margin: auto;
+            background-color: aqua;
+        }
+    </style>
+</head>
+<body>
+    <main>
+        <h1>Minha Página</h1>
+
+        <p>
+            Na página 5 (pasg005.html) foi criado um script com um botão de acesso, e tendo como saída a confirmação de botão clicado "Você clicou!". O iframe, através do "src" acessa a pasta "páginas-extras"  e a página pag005.html do seu site. Desta forma temos uma porta de entrada aberta pasra qualquer um que queira entrar.
+        </p>
+
+        <iframe src="paginas-extras/pag005.html"></iframe>
+        
+        <p>
+            Nesta configuração, o usuário terá acesso ao script que está dentro site que você colocou em seu iframe. Se o script for maliciosso, de alguém mal intensionado, você estará dando permissão para que este script maliciosso colete dados importantes do seu usuário, e isto não é nada bom. No iframe005.2 vermos como bloquear todo o iframe para que nada dentro do site que está dentro do seu iframe possa acessar as informações do usuário.
+        </p>
+    </main>
+</body>
+</html>

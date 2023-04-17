@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Iframe 4.3</title>
+    <style>
+        main{
+            background-color: bisque;
+            width: 500px;
+        }
+        h1, h3{
+            padding: 10px 10px 0px 10px;
+        }
+        p{
+            padding: 10px;
+            text-align: justify;
+        }
+        iframe{
+            display: block;
+            margin: auto;
+            background-color: aqua;
+        }
+    </style>
+</head>
+<body>
+    <main>
+        <h1>Meu Site Principal</h1>
+        <h3>Tornando o iframe mais seguro</h3>
+        <p>
+            Para aumentar ainda mais a segurança do seu iframe, além da configuração sandbox="sandbox" você poderá usar a configuração do parâmetro <cite><b>referrerpolicy</b></cite> no padrão <cite><b>no-referrer</b></cite>. Esta configuração não permitirá que o site que você colocou dentro do seu iframe colete dados do usuário. Os sites costumam coletar dados do usuário para ficar envinado propoagandas para os usuários do seu site. Esta abertura para coleta de dados do usuário do seu site não é nada bom. 
+        </p>
+        
+        <iframe src="paginas-extras/pag004.html" sandbox="sandbox" referrerpolicy="no-referrer">
+            Seu navegador não é compatível com iframes.
+        </iframe>
+        
+        <p>
+            No próximo arquivo "iframe004.4" estarems vendo como que você pode dar permissão para os usuários terem acesso a alguns eventos do site que está dentro do seu frame. Este acesso só deve ser dado quando se tem a certeza que o usuário poderá entrar, por exemplo, numa área para fazer um cadastro usando seus dados sem tais dados não sejam usados por outra pessoa, ou site com más intensões.
+        </p>
+    </main>
+</body>
+</html>

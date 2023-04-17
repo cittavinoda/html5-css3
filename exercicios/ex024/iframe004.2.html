@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Iframe 4.2</title>
+    <style>
+        main{
+            background-color: bisque;
+            width: 500px;
+        }
+        h1, h3{
+            padding: 10px 10px 0px 10px;
+        }
+        p{
+            padding: 10px;
+            text-align: justify;
+        }
+        iframe{
+            display: block;
+            margin: auto;
+            background-color: aqua;
+        }
+    </style>
+</head>
+<body>
+    <main>
+        <h1>Meu Site Principal</h1>
+        
+        <h3>Bloqueando Ações Maliciosas</h3>
+        
+        <p>Para bloquear qualquer ação maliciosa que possa estar contido no site inserido no seu iframe usa-se o método "sandbox" no padrão "sandbox". Este método produz segurança máxima para o seu iframe e não permite que o usuário tenha acesso direto aos eventos de solicitação de dados, de ativação de script, acesso a formulários, etc. </p>
+                
+        <iframe src="paginas-extras/pag004.html" sandbox="sandbox">
+            Seu navegador não é compatível com iframes.
+        </iframe>
+        
+        <p>
+            Sandbox é um método, e este método possui vários padrões de atuação. O padrão sandbox bloqueia todo acesso do usuário do seu site aos arquivos que estejam dentro do iframe. A colocação de um iframe dentro do seu site, abre uma porta de entrada para usuários e outros sites. Há sites ocultos que deixam um formulário, ou outro elemento de entrada de dados com a intensão de capturar dados dos usuários que entram no seu site, e podem causar perturbações ao usuário que acessa o seu site. Este evento não é bom, porque o seu site fica marcado como um site problemático. No arquivo iframe004.3 ver-se-á como manter o seu iframe bloqueado com uma segurança extra.
+        </p>
+    </main>
+</body>
+</html>

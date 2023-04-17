@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Script 3</title>
+    <style>
+        main{
+            background-color: bisque;
+            width: 500px;
+        }
+        h1{
+            padding: 10px 10px 0px 10px;
+        }
+        p{
+            padding: 10px;
+            text-align: justify;
+        }
+        iframe{
+            display: block;
+            margin: auto;
+            background-color: aqua;
+        }
+    </style>
+</head>
+<body>
+    <main>
+        <h1>Minha Página</h1>
+        <p>
+            Esta é a última página que mostra como se pode dar total protelção ao seu iframe e permissão específica a algumas áreas que o usuário pode acessar. Nesta página haverá um bloqueio a quase todas as áreas de acesso, e uma permissão para poder executar com segurança o script do site externo.
+        </p>
+        <iframe src="paginas-extras/pag005.html" sandbox="allow-scripts" referrerpolicy="no-referrer"></iframe>
+        <p>
+            Embora o seu iframe esteja ainda sob segurança máxima, veja que através do sandbox com o padrão "allow-scripts" você está dando permissão ao usuário para acessar a execução do script "clique em mim". Observe que agora se você clicar no botão Clique em mim, uma ação será executada.
+        </p>
+    </main>
+</body>
+</html>

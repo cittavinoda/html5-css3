@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Script 2</title>
+    <style>
+        main{
+            background-color: bisque;
+            width: 500px;
+        }
+        h1{
+            padding: 10px 10px 0px 10px;
+        }
+        p{
+            padding: 10px;
+            text-align: justify;
+        }
+        iframe{
+            display: block;
+            margin: auto;
+            background-color: aqua;
+        }
+    </style>
+</head>
+<body>
+    <main>
+        <h1>Minha Página</h1>
+
+        <p>
+            Nesta página, estaremos demonstrando como é que se dá proteção total ao frame como foi explicado anteriormente utilizando as configurações sandbox e referrerpolicy.
+        </p>
+        <iframe src="paginas-extras/pag005.html" sandbox="sandbox" referrerpolicy="no-referrer"></iframe>
+
+        <p>
+            Observe que agora o iframe está todo bloqueado (segurança máxima) com as configurações de sandbox no padrão sandbox, segurança máxima, e referrerpolicy no padrão no-referrer. todos os dados do usuário está totalmente protegido de um script malicioso que pode existir dentro do site que está dentro do seu iframe. ao clicar em clique em mim, você poderá constatar que nenhum script será executado. Se o script do site que está dentro do seu iframe não for oferecer nenhum risco ao usuário, você pode liberar o acesso somente a ele utilizando uma permissão do sandbox. Veja como isto pode ser feito no "iframe005.3".
+        </p>
+    </main>
+</body>
+</html>

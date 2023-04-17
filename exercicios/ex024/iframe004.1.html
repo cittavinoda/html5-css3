@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Iframe 4.1</title>
+    <style>
+        main{
+            background-color: bisque;
+            width: 500px;
+        }
+        h1{
+            padding: 10px;
+        }
+        p{
+            padding: 10px;
+            text-align: justify;
+        }
+        iframe{
+            display: block;
+            margin: auto;
+            background-color: aqua;
+        }
+    </style>
+</head>
+<body>
+    <main>
+        <h1>Meu Site Principal</h1>
+        <p>
+            Nesta página do nosso site criaremos um iframe e dentro dele vamos inserir um site externo. Neste site externo encontra-se uma aba para que o usuário do nosso site possa cadastrar seus dados pessoais. Esta opção de cadastro, dentro do site externo, pode ser uma artimanha para pegar dados dos usuários que entram em nosso site, por empresas de propaganda, que enviam para o sistema do usuário diversos tipos de propaganda, ou mesmo, sites que pegam informações do usuário para coisas suspeitas.
+        </p>
+        
+        <iframe src="paginas-extras/pag004.html">
+            Seu navegador não é compatível com iframes.
+        </iframe>
+        
+        <p>
+            Obs: Este formulário representa um site externo e que foi inserido neste site por meio de um iframe. Se você tem um site externo dentro do seu site por meio de um iframe, você deve entender que o iframe é uma porta de entrada para qualquer usuário, ou para qualquer site ter acesso aos dados do seu usuário, e isto caracteriza um grande problema. No iframe004.2.html, você verá como este problema poderá ser resolvido facilmente com um método que bloqueia o preenchimento de dados no formulário, dado como suapeito no site inserido em seu iframe.
+        </p>
+    </main>
+</body>
+</html>

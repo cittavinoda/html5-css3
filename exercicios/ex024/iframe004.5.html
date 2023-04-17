@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Iframe 4.5</title>
+    <style>
+        main{
+            background-color: bisque;
+            width: 500px;
+        }
+        h1, h3{
+            padding: 10px 10px 0px 10px;
+        }
+        p{
+            padding: 10px;
+            text-align: justify;
+        }
+        iframe{
+            display: block;
+            margin: auto;
+            background-color: aqua;
+        }
+    </style>
+</head>
+<body>
+    <main>
+        <h1>Meu Site Principal</h1>
+
+        <h3>Permitindo acesso específico aos documentos de mesma origem, ao formulário e ao script</h3>
+        
+        <p>
+            Nesta página, estaremos mostrando como se permite que o usuário tenha acesso a mais de um objeto de acesso do site que está inserido em seu iframe. Todos estes acessos são específicos, e, portanto, são garantidos que tais acessos não irão colher dados do usuário para usá-los com propósitos maliciosos. 
+        </p>
+        
+        <iframe src="paginas-extras/pag004.html" sandbox="allow-same-origin allow-forms allow-scripts" referrerpolicy="no-referrer">
+            Seu navegador não é compatível com iframes.
+        </iframe>
+        
+        <p>
+            Obs: A configuração sandbox="allow-same-origin" permite que o usuário do site dentro do seu iframe, tenha acesso a qualquer documentação que esteja dentro da própria pasta de construção do site desde que ela esteja declarada no src do iframe. Por exemplo, este site está dentro da pasta "ex024". dentro desta pasta temos a pasta "páginas-extras", e dentro desta temos a página "pag004.html" que está declarada no src do iframe. Desata forma pela configuração sandbox e referrerpolicy, todos as seguranças do iframe está ativado, e liberado apenas o acesso a página para prenchimento e envio de formulários. As configurações dentro do sandbox "allow-forms" permite que se tenha acesso aos formulários, e a configuração "allow-scripts" permite que se tenha acesso ao script do documento. Todos os outros arquivos que não se tem permissão para acessar, estão totalmente protegidos contra invasão.
+        </p>
+    </main>
+</body>
+</html>
