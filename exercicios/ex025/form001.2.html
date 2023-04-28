@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário 1.2 Método Get e Post</title>
+    <style>
+        *{
+            margin: 0px;
+            padding: 0px;
+        }
+        main{
+            width: 500px;
+            background-color: bisque;
+            margin-top: 20px;
+            margin-left: 20px;
+            padding: 10px;
+        }
+        h1{
+            text-align: center;
+            margin-bottom: 20px;
+            text-shadow: 2px 2px 5px goldenrod;
+        }
+        form{
+            margin: 20px 20px 20px 0px;
+            inline-size: 1em;
+        }
+        h2{
+            padding-bottom: 20px;
+        }
+        article{
+            text-align: justify;
+            line-height: 1.5em;
+            padding: 10px;
+            margin: 20px;
+            background-color: aliceblue;
+            border: 2px solid lightblue;
+        }
+        article p{
+            text-indent: 30px;
+        }
+    </style>
+</head>
+<body>
+    <main>
+        <h1>Meu Primeiro Formulário</h1>
+        <form action="cadastro.php" method="post" autocomplete="off">
+            <p><label for="inome">Nome:</label>
+                <input type="text" name="nome" id="inome"></p>
+            <p><label for="isobrenome">Sobrenome:</label>
+                <input type="text" name="sobrenome" id="isobrenome"></p>
+            <p><input type="submit" value="Enviar"></p>
+        </form>
+        <article>
+            <h2>Métodos Get e Post</h2>
+            <p>Quando em um formulário, dentro do form, não se determina um método de envio de dados, por padrão, a HTML5 define o método de envio <strong>"GET"</strong>.</p>
+            <p>O método de envio GET permite que os dados do formulário apareça na URL do site.</p>
+            <p>Quando se desja enviar dados de um formulário sem que na URL apareça os dados contidos no formulário, usa-se o método <strong>"POST"</strong>. O método POST oculta os dados de um formulário da URL do site, mas não protege estes dados de serem acessados.</p>
+            <p>Para acessar tais dados basta clicar com o botão direito do mause em cima do formulário aberto, ir para a aba inspecionar abrindo do Devtools. No Devtools clique na opção NETWORK (rede). Procure por "names", "cadastro.php", clique na aba HEADERS e você terá acesso aos dados do formulários.</p>
+            <p>O método GET é usado quando os dados do formulário não for confidenciais, não ultrapassar mais de 3000 bytes, que não tenha imagens ou arquivos.</p>
+            <p>Para dados que necessitam ser ocultados utiliza-se o método POST. Este método permite o envio de dados com mais de 3000 bytes, imagens e arquivos.</p>
+            <p>Para dados confidenciais utiliza-se a criptografia dentro do protocolo https.</p>
+            
+        </article>
+    </main>
+</body>
+</html>

@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário 1.1</title>
+    <style>
+        *{
+            margin: 0px;
+            padding: 0px;
+        }
+        main{
+            width: 500px;
+            background-color: bisque;
+            margin-top: 20px;
+            margin-left: 20px;
+            padding: 10px;
+        }
+        h1{
+            text-align: center;
+            margin-bottom: 20px;
+            text-shadow: 2px 2px 5px goldenrod;
+        }
+        form{
+            margin: 20px 20px 20px 0px;
+            inline-size: 1em;
+        }
+        h2{
+            padding-bottom: 20px;
+        }
+        article{
+            text-align: justify;
+            line-height: 1.5em;
+            padding: 10px;
+            margin: 20px;
+            background-color: aliceblue;
+            border: 2px solid lightblue;
+        }
+        article ul{
+            list-style-position: inside;
+            
+        }
+    </style>
+</head>
+<body>
+    <main>
+        <h1>Meu Primeiro Formulário</h1>
+        <form action="cadastro.php" autocomplete="off">
+            <p><label for="inome">Nome:</label>
+                <input type="text" name="nome" id="inome"></p>
+            <p><label for="isobrenome">Sobrenome:</label>
+                <input type="text" name="isobrenome" id="isobrenome"></p>
+            <p><input type="submit" value="Enviar"></p>
+        </form>
+        <article>
+            <h2>Para onde são enviado os dados?</h2>
+            <ul>
+        
+                <li>Ao clicar no botão enviar, os dados são enviados para um servidor, que pode ser Java, JavaScript, php, etc. Neste caso o servidor escolhido será o php.</li>
+                <li>Para selecionar o servidor php deve-se ativar no "form" o parâmetro <strong>action=""</strong> e dentro de suas aspas deve-se escrever o nome do arquivo de servidor que receberá as informações enviadas."</li>
+                <li>Para remover a caixa de menu de opções quando se passar o mause sobre a caixa de controle, deve-se inserir no "form" o parâmetro <strong>autocomplete="off"</strong>.</li>
+                <li>Para ligar o termo Nome: ou Sobrenome a sua caixa de controle utilizamos o parâmetro <b>"lable"</b>. Os "lables" faz com que o termo Nome: ou Sobrenome seja a etiqueta de identificação de suas caixas de controle.</li>
+                <li>Para o HTML e o PHP é mais importante o objeto <b>"name"</b> do que o objeto "id", e para o JavaScript e o Lable é mais importante o objeto <b>"id"</b>.</li>
+                <li>Para interligar o termo a suas caixas de controle os termos <b>"Nome"</b> e <b>"Sobrenome"</b> devem ser envelopados com a tag <b>"lable"</b>. A tag lable oferta apenas o parâmetro <b>(for=" ")</b>. O parâmetro for deve receber como valor, o valor declarado nas <b>"id's"</b>.</li>
+            </ul>
+        </article>
+    </main>
+</body>
+</html>

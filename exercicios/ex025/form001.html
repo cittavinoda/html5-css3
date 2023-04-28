@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário 1</title>
+    <style>
+        *{
+            margin: 0px;
+            padding: 0px;
+        }
+        body{
+            background-color: white;
+        }
+        main{
+            width: 500px;
+            background-color: cornsilk;
+            padding: 10px;
+        }
+        h1{
+            padding: 10px;
+            text-align: center;
+            text-shadow: 2px 2px 7px rgba(0, 0, 255, 0.427);
+        }
+        form{
+            padding: 10px;
+        }
+        article{
+            text-align: justify;
+            line-height: 1.5em;
+            background-color: antiquewhite;
+            border: 2px solid black;
+            padding: 5px;
+        }
+    </style>
+</head>
+<body>
+    <main>
+        <h1>Meu Primeiro Formulário</h1>
+        <form>
+            <p>Nome: <input type="text" name="nome" id="nome"></p>
+            <p>Sobrenome: <input type="text" name="sobrenome" id="sobrenome"></p>
+            <p><input type="submit" value="Enviar"></p>
+        </form>
+        <article>
+            <p>Todo formulário tem que estar dentro da tag "form".</p>
+            <p>Toda chamada de controle, por exemplo, a solicitação para digitar o nome, Nome: deve ser seguido da caixa de controle que é criado pelo parâmetro input. Como o input é um texto, o parâmetro a ser selecionado é input:text.</p>
+            <p>Para o envio da informação deve-se criar um botão com a ação de enviar. Para criar este botão usa-se o parâmetro input:submit. Juntamente com o input:submit, vem o parâmetro value, que é o elemento usado para dar nome ao botão submit.</p>
+        </article>
+    </main>
+
+</body>
+</html>
