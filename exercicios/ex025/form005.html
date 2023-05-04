@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário</title>
+</head>
+<body>
+    <h1>Exemplo de Formulário</h1>
+    <h2>Checkbox e Radio Button</h2>
+
+    <form action="cadastro.php" method="get" autocomplete="on">
+       
+        <fieldset>
+            <legend>Sexo</legend>
+            <input type="radio" name="sexo" id="Masc" value="M"> Masculino <br>
+            <input type="radio" name="sexo" id="Fem" value="F"> Feminino
+        </fieldset>
+        <fieldset>
+            <legend>Esportes Favoritos</legend>
+            <input type="checkbox" name="esbas" id="iesbas"> <label for="iesbas">Basquete</label> <br>
+            <input type="checkbox" name="esfut" id="iesfut"> <label for="iesfut">Futebol</label> <br>
+            <input type="checkbox" name="esnat" id="iesnat"> <label for="iesnat">Natação</label> <br>
+            <input type="checkbox" name="esten" id="iesten"> <label for="iesten">Tenis</label>
+        </fieldset>
+        <p>
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Limpar">
+        </p>
+    </form>
+
+    <p>
+        Checkbox <br>
+        O &lt;input type="checkbox"&gt; define uma caixa de seleção.
+    </p>
+    <p>
+        Checkbox (Caixa de Seleção) A caixa de seleção é mostrada como uma caixa quadrada que é marcada (marcada) quando ativada.
+
+        As caixas de seleção são usadas para permitir que um usuário selecione uma ou mais opções de um número limitado de opções.
+        
+        Dica: sempre adicione a <label> tag para melhores práticas de acessibilidade!
+    </p>
+    <p>
+        Radio Button <br>
+        O &lt;input type="radio"&gt; define um botão de opção.</p>
+    <p>
+        Radio Button (Botão de Radio) Os botões de opção são normalmente apresentados em grupos de rádio (uma coleção de botões de opção que descrevem um conjunto de opções relacionadas). Apenas um botão de opção em um grupo pode ser selecionado ao mesmo tempo.
+    </p>
+    <p>
+        Nota 1: O grupo de rádio deve ter compartilhado o mesmo nome (o valor do atributo name) para ser tratado como um grupo, entretanto, o id de cada elemento deve ser diferente. Depois que o grupo de opções é criado, selecionar qualquer botão de opção nesse grupo desmarca automaticamente qualquer outro botão de opção selecionado no mesmo grupo. <br>
+        Para vários elementos pertencerem ao mesmo grupo, eles tem que ter mesmo "name" e "id's" diferentes. <br>
+
+        Você pode ter quantos grupos de rádio quiser em uma página, desde que cada grupo tenha seu próprio nome. <br>
+        Cada grupo tem que ter seu próprio nome, mas todos os elementos de cada grupo tem que ter mesmos names e id's diferentes.
+    </p>
+    <p>
+        Nota 2: O atributo value define o valor exclusivo associado a cada botão de opção. O valor não é mostrado ao usuário, mas é o valor que é enviado ao servidor em "enviar" para identificar qual botão de opção foi selecionado.
+    </p>
+    <p>
+        Atributo Checked. <br>
+        O atributo checked é um atributo booleano.
+
+        Quando presente, ele especifica que um &lt;input&gt; elemento, deve ser pré-selecionado (marcado) quando a página é carregada. <br>
+        
+        O atributo checked pode ser usado com &lt;input type="checkbox"&gt; (<input type="checkbox">) e &lt;input type="radio"&gt; (<input type="radio">). <br>
+        
+        O atributo checked também pode ser definido após o carregamento da página, com um JavaScript. <br>
+
+        No fieldset que for usado o elemento input radio, não é permitido o uso de mais do que um atributo checked.
+        No fieldset que for usado o elemento input checkbox, pode-se usar o atributo checked sem nenhuma restição.
+    </p>
+</body>
+</html>
