@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário</title>
+</head>
+<body>
+    <h1>Elementos Color, Range, e File</h1>
+
+    <form action="cadastro.php" method="post" autocomplete="on">
+    
+        <h2>&lt;input type="color"&gt;</h2>
+        <p>
+            &lt;input&gt; Os elementos do tipo Cor fornecem um elemento de interface do usuário que permite que um usuário especifique uma cor, usando uma interface do seletor de cores visual ou inserindo a cor em um campo de texto em #rrggbb formato hexadecimal.
+    
+            Apenas cores simples (sem canal alfa) são permitidas, embora as cores CSS tenham mais formatos, por exemplo, nomes de cores, notações funcionais e um formato hexadecimal com um canal alfa.
+        </p>
+        <p>
+            Para inserir uma cor em definitivo no input color, insera o código da cor desejada dentro do parâmetro "value", depois do id="". Exemplo: <mark>&lt;input type="color" name="cor" id="icor" value="#00ff00"&gt;</mark>. Este código de cor hexadecimal é da cor verde claro.
+        </p>
+    
+        <p>
+            <label for="icor">Cor</label>
+            <input type="color" name="cor" id="icor" value="#00ff00">
+        </p>
+    
+    
+        <h2>&lt;input type="range"&gt;</h2>
+        <p>
+            &lt;input&gt; elementos do tipo "range" deixa o usuário especificar um valor numérico estabelecido entre um valor mínimo e um valor máximo. Trata-se de um cursor que atua dentro de um controle de deslizamento. O elemento range dá acesso ao usuário variar uma grandeza conforme sua necessidade, como por exemplo abaixar ou aumentar o volume de som, manifestar o seu nível de satisfação com o site, etc.
+        </p>
+        <p>
+            Por padrão, o elemento Range trabalha com valor mínimo 0 e valor máximo 100, e o seu cursor inicia na posição central do controle de deslizamento. Para o caso do valor entre 0 e 100, o cursor se posiciona no valor 50. Esta posição mediana em que o cursor começa é chamado de nível padrão.
+        </p>
+        <p>
+            CONFIGURAÇÃO DA FAIXA DO RANGER. A faixa do ranger pode ser configurada para atuar entre dois novos valores de mínimo e máximo. Após a id="" digita-se min="" dando a ele novo valor, e max="" dando a este um novo valor também. Exemplo: &lt;input type="range" name="nivel" id="inivel" min="1" max="5".
+        </p>
+    
+        <p>
+            <label for="inivel">Nível de Satisfação</label>
+            <input type="range" name="nivel" id="inivel" min="1" max="5">
+        </p>
+    
+        <p>
+            FAIXA PADRÃO. A faixa padrão é o ponto onde o cursor se encontra dentro da faixa de controle de deslizamento, e geralmente se encontra no meio. Por exemplo, entre a faixa de 0 a 100, a faixa padrão é 50. Entre a faixa de 1 a 5, a faixa padrão é 2. Entretanto, pode-se mudar esta faixa padrão para o cursor iniciar de outro ponto. Para isso, logo após o elemento "id" ou o elemento que define um novo valor mínimo e máximo, utiliza-se o parâmetro "value" e dê a este o valor do ponto inicial do cursor. Exemplo. &lt;input type="range" name="nivel" id="inivel" min="1" max="5" value="2". A faixa deslizante vai de 1 a 5 e a faixa padrão inicia-se no ponto 2.
+        </p>
+    
+        <p>
+            <label for="inivel">Nível de Satisfação</label>
+            <input type="range" name="nivel" id="inivel" min="1" max="5" value="2">
+        </p>
+    
+        <h2>&lt;input type="file&gt;</h2>
+    
+        <p>&lt;input&gt; elementos com type="file" permitem que o usuário escolha um ou mais arquivos do armazenamento do dispositivo e o envie a um servidor. Uma vez escolhidos, os arquivos podem ser carregados em um servidor usando o envio de formulários ou manipulados usando o código JavaScript e a API de arquivo.</p>
+        <p>Quando se utiliza controles que enviam arquivos, como o controle "file", não se usa no form o método "get" devido a sua baixa capacidade de enviar bytes (3000 bytes no máximo) usa-se o método "Post".</p>
+    
+        <p>
+            <label for="ifoto">Foto do Perfil</label>
+            <input type="file" name="foto" id="ifoto">
+        </p>
+    
+        <p>
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Limpar">
+        </p>
+    
+</form>
+</body>
+</html>
