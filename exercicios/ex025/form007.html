@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário</title>
+</head>
+<body>
+    <h1>Select, Datalist e Textarea</h1>
+
+    <form action="cadastro.php" method="get" autocomplete="on">
+
+        <p>A tag select cria uma caixa de seleção para o desenvolvedor montar uma lista de opções para o usuário. No caso em estudo será  montada uma lista de Estados do Brasil.</p>
+        <p>Dentro datag select, utiliza-se a tag option que permite ao desenvolvedor cirar as opções para seleção de estados recebendo um valor atribuído ao  nome do Estado em questão.</p>
+        <p>Os estado são digitados ficam na ordem da digitação. É dever do desenvolvedor colocá-los em ordem alfabética.</p>
+        <p>Os Estados digitados podem ser organizados por meio de agrupamentos, por exemplo, agrupando-os por regiões. Para isso, as tagas options devem ser envelopadas, oudigitadas dentro da tag "optgroup". A tag "optgroup" recebe o atributo "label" onde se define a região de cada grupo de estado. </p>
+        <p>Para deixar na caixa de controle um estado selecionado, basta inserir depois do valor dado ao "value" a tag "select". </p>
+
+        <p>
+            <fieldset>
+                <legend>Estados Brasileiros</legend>
+                <label for="iest">Estado</label>
+                <select name="estado" id="iest">
+                    <option value="BR">Estados</option>
+                    <optgroup label="Região Sudeste">
+                        <option value="MG">Minas Gerais - MG</option>
+                        <option value="RJ">Rio de Janeiro - RJ</option>
+                        <option value="SP">São Paulo - SP</option>
+                    </optgroup>
+                    <optgroup label="Região Nordeste">
+                        <option value="MA">Maranhão - MA</option>
+                        <option value="PE">Pernambuco - PE</option>
+                        <option value="RN">Rio Grande do Norte - RN</option>
+                    </optgroup>
+                </select>
+            </fieldset>
+        </p>
+
+        <p>
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Limpar">
+        </p>
+
+        <p>
+            Elemento Datalist <br>
+            Definição e Uso
+        </p>
+
+
+        <p>A &lt;datalist&gt; tag especifica uma lista de opções predefinidas para um &lt;input&gt; elemento.</p>
+
+        <p>A &lt;datalist&gt; tag é usada para fornecer um recurso de "preenchimento automático" para &lt;input&gt; elementos. Os usuários verão uma lista suspensa de opções predefinidas à medida que inserem dados.</p>
+
+        <p>O atributo &lt;datalist&gt; id do elemento deve ser igual ao &lt;input&gt; atributo list do elemento (isso os une).</p>
+
+        <p>A tag "datalist" deve conter um "id" com o intuito de interligar esta tag ao elemento "input text" através do atributo "list" inserido na tag "input text" com o valor de identificação da "datalist" - lstprof que significa lista de profissões. </p>
+
+        <p>Outro recurso que o elemento "datalist" permit, é que, caso não haja na listagem do programador o registro de uma profissão, o usuário poderá digitar sua profissão na caixa de controle e enviar seus dados normalmente. Após o envio, o elemento "datalist" inseri automaticamente a profissão digitalizada pelo usuário em sua listagem. </p>
+        <p>
+            <label for="iprof">Profissão</label>
+            <input type="text" name="profissão" id="iprof" list="lstprof">
+            
+            <datalist id="lstprof">
+                <option value="ADM">Administrador</option>
+                <option value="CONT">Contador</option>
+                <option value="DEV">Desenvolvedeor</option>
+                <option value="PROF">Professor</option>
+            </datalist>
+        </p>
+
+        <p>
+            <label for="imsg">Mensagem:</label>
+            <textarea name="msg" id="imsg" cols="30" rows="10"></textarea>
+        </p>
+        <p>
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Limpar">
+        </p>
+
+    </form>
+</body>
+</html>
